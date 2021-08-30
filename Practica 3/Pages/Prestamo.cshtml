@@ -1,0 +1,62 @@
+﻿@page
+@model Practica_3.Pages.PrestamoModel
+@{ViewData["Title"] = "Prestamo";}
+
+<div>
+    <form method="post">
+
+        <div class="justify-content-center">
+            <label class="form-group">Monto</label>
+            <input class="form-control" type="text" name="monto" value="" />
+            <br />
+            <label class="form-group">Cantidad de Cuotas</label>
+            <input class="form-control" type="text" name="cuotas" value="" />
+            <br />
+            <label class="form-group">Porcentaje de Interes</label>
+            <input class="form-control" type="text" name="interes" value="" />
+            <br />
+            <input type="submit" name="envio" value="Enviar" />
+        </div>
+
+
+
+    </form>
+
+
+    @if (ViewData["pagarPorCuota"] != null)
+    {
+        double total = 0;
+            <h3>Amortización por Cuota</h3>
+            <table class="table table-striped table-striped table-hover">
+                <thead>
+                <th>Cuota</th>
+                <th>Pagos</th>
+                <th>Interes</th>
+                <th>Total</th>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= (int)ViewData["Cuotas"]; i++)
+                    {
+                        double suma = (double)ViewData["pagarPorCuota"] + (double)ViewData["InteresPorCuota"];
+                        total += suma;
+                    <tr>
+                        <td>@i</td>
+                        <td>@ViewData["pagarPorCuota"]</td>
+                        <td>@ViewData["InteresPorCuota"]</td>
+                        <td>@suma</td>
+                    </tr>
+                    }
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="3" class="text-center">Total a pagar:</th>
+                        <th>@Math.Round(total, 2)</th>
+                    </tr>
+                </tbody>
+
+
+            </table>
+    }
+
+
+</div>
