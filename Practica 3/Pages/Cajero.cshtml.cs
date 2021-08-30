@@ -20,13 +20,12 @@ namespace Practica_3.Pages
         }
         public void OnGet()
         {
-
         }
         public void OnPost(string banco = "", int monto = 0)
         {
-            if (monto % 100 != 0)
+            if (monto % 100 != 0 || monto<0)
             {
-
+                ViewData["mensaje"] = "El monto a retirar debe de ser multiplo de 100";
                 return;
             }
             switch (banco)
@@ -34,18 +33,22 @@ namespace Practica_3.Pages
                 case "ABC":
                     if (monto <= 10000)
                     {
-
-                    }
-                    else if (monto > 10000)
-                    {
-
+                      ViewData["retirado"]= dispensarBilletes(monto);
                     }
                     else
                     {
-
+                        ViewData["mensaje"] = "solo puede retirar 10,000 por persona del banco ABC ";
                     }
                     break;
                 default:
+                    if (monto <= 2000)
+                    {
+                        ViewData["retirado"] = dispensarBilletes(monto);
+                    }
+                    else
+                    {
+                        ViewData["mensaje"] = "solo puede retirar 2,000 por persona del banco "+banco;
+                    }
                     break;
             }
 
@@ -59,17 +62,17 @@ namespace Practica_3.Pages
             {
                 retiro.Add(1000, 0);
                 int cantidad1000 = monto / 1000;
-                if (cantidad1000 <= billetes[1000])
+                if (cantidad1000 <= auxbilletes[1000])
                 {
                     monto -= cantidad1000 * 1000;
                     retiro[1000] = cantidad1000;
-                    billetes[1000] -= cantidad1000;
+                    auxbilletes[1000] -= cantidad1000;
                 }
                 else
                 {
-                    monto -= billetes[1000] * 1000;
-                    retiro[1000] = billetes[1000];
-                    billetes[1000] -= billetes[1000];
+                    monto -= auxbilletes[1000] * 1000;
+                    retiro[1000] = auxbilletes[1000];
+                    auxbilletes[1000] -= auxbilletes[1000];
                 }
 
             }
@@ -78,17 +81,17 @@ namespace Practica_3.Pages
             {
                 retiro.Add(500, 0);
                 int cantidad500 = monto / 500;
-                if (cantidad500 <= billetes[500])
+                if (cantidad500 <= auxbilletes[500])
                 {
                     monto -= cantidad500 * 500;
                     retiro[500] = cantidad500;
-                    billetes[500] -= cantidad500;
+                    auxbilletes[500] -= cantidad500;
                 }
                 else
                 {
-                    monto -= billetes[500] * 500;
-                    retiro[500] = billetes[500];
-                    billetes[500] -= billetes[500];
+                    monto -= auxbilletes[500] * 500;
+                    retiro[500] = auxbilletes[500];
+                    auxbilletes[500] -= auxbilletes[500];
                 }
 
             }
@@ -97,24 +100,33 @@ namespace Practica_3.Pages
             {
                 retiro.Add(100, 0);
                 int cantidad500 = monto / 100;
-                if (cantidad500 <= billetes[500])
+                if (cantidad500 <= auxbilletes[500])
                 {
                     monto -= cantidad500 * 100;
                     retiro[100] = cantidad500;
-                    billetes[100] -= cantidad500;
+                    auxbilletes[100] -= cantidad500;
                 }
                 else
                 {
-                    monto -= billetes[100] * 100;
-                    retiro[100] = billetes[100];
-                    billetes[100] -= billetes[100];
+                    monto -= auxbilletes[100] * 100;
+                    retiro[100] = auxbilletes[100];
+                    auxbilletes[100] -= auxbilletes[100];
                 }
 
             }
 
+            if (monto == 0)
+            {
+                billetes = new Dictionary<int, int>(auxbilletes);
+                return retiro;
+            }
+            else
+            {
+                ViewData["mensaje"] = "El cajero no tiene ese monto a retirar disponible";
+                return null;
+            }
+            
 
-
-            return retiro;
         }
     }
 }

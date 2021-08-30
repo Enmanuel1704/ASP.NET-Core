@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj": {}
+    "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj": {
+    "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
+        "projectUniqueName": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
         "projectName": "Practica 3",
-        "projectPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
-        "packagesPath": "C:\\Users\\MIDEREC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\obj\\",
+        "projectPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
+        "packagesPath": "C:\\Users\\jsantos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\MIDEREC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
