@@ -715,3 +715,4 @@ C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 3\obj\Debug\net5.0\ref\Practica 3.dll
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 3\obj\Debug\net5.0\Practica 3.pdb
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 3\obj\Debug\net5.0\Practica 3.genruntimeconfig.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 3\obj\Debug\net5.0\Razor\Pages\Cajero.cshtml.g.cs

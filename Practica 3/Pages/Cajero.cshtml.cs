@@ -10,20 +10,20 @@ namespace Practica_3.Pages
 
     public class CajeroModel : PageModel
     {
-        Dictionary<int, int> billetes;
+        public static Dictionary<int, int> billetes;
         public CajeroModel()
+        {
+        }
+        public void OnGet()
         {
             billetes = new Dictionary<int, int>();
             billetes.Add(1000, 9);
             billetes.Add(500, 19);
             billetes.Add(100, 99);
         }
-        public void OnGet()
-        {
-        }
         public void OnPost(string banco = "", int monto = 0)
         {
-            if (monto % 100 != 0 || monto<0)
+            if (monto % 100 != 0 || monto < 100)
             {
                 ViewData["mensaje"] = "El monto a retirar debe de ser multiplo de 100";
                 return;
@@ -58,7 +58,7 @@ namespace Practica_3.Pages
             Dictionary<int, int> auxbilletes = new Dictionary<int, int>(billetes);
             
             var retiro = new Dictionary<int, int>();
-            if (monto >= 1000)
+            if (monto >= 1000 && auxbilletes[1000] > 0)
             {
                 retiro.Add(1000, 0);
                 int cantidad1000 = monto / 1000;
@@ -77,7 +77,7 @@ namespace Practica_3.Pages
 
             }
 
-            if (monto >= 500)
+            if (monto >= 500 && auxbilletes[500] > 0)
             {
                 retiro.Add(500, 0);
                 int cantidad500 = monto / 500;
@@ -96,11 +96,11 @@ namespace Practica_3.Pages
 
             }
 
-            if (monto >= 100)
+            if (monto >= 100 && auxbilletes[100] > 0)
             {
                 retiro.Add(100, 0);
                 int cantidad500 = monto / 100;
-                if (cantidad500 <= auxbilletes[500])
+                if (cantidad500 <= auxbilletes[100])
                 {
                     monto -= cantidad500 * 100;
                     retiro[100] = cantidad500;

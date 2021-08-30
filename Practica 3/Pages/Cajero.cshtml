@@ -10,7 +10,17 @@
         <div class="justify-content-center ">
             <div class="row">
                 <div class="col-5">
+                    @if (ViewData["mensaje"] != null)
+                    {
 
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong> @ViewData["mensaje"] </strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                    }
                     <label class="input-group">Banco</label>
                     <input class="form-control" type="text" name="banco" value="" />
                     <br />
@@ -24,4 +34,39 @@
 
 
     </form>
+    @if (ViewData["retirado"] != null)
+    {
+        <br />
+        <h3>Detalles del Retiro</h3>
+        int resultado = 0;
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Billetes</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in (Dictionary<int, int>)ViewData["retirado"])
+                    {
+                        int total = item.Key * item.Value;
+                        resultado += total;
+                    <tr>
+                        <td>@item.Key</td>
+                        <td>@item.Value</td>
+                        <td>@total</td>
+                    </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Total retirado:</th>
+                        <th>@resultado</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    }
 </div>
