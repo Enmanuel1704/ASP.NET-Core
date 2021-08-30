@@ -1,0 +1,26 @@
+﻿@page
+@model Practica_3.Pages.CajeroModel
+@{
+    ViewData["Title"] = "Cajero Automatico";
+}
+
+<div>
+    <form method="post">
+
+        <div class="justify-content-center">
+            <label class="form-group">Monto</label>
+            <input class="form-control" type="text" name="monto" value="" />
+            <br />
+            <label class="form-group">Cantidad de Cuotas</label>
+            <input class="form-control" type="text" name="cuotas" value="" />
+            <br />
+            <label class="form-group">Porcentaje de Interes</label>
+            <input class="form-control" type="text" name="interes" value="" />
+            <br />
+            <input type="submit" name="envio" value="Enviar" />
+        </div>
+
+
+
+    </form>
+</div>

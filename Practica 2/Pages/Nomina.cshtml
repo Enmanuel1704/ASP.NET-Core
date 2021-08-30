@@ -1,0 +1,51 @@
+﻿@page
+@model Practica_2.Pages.NominaModel
+@{ 
+    Layout = "_Layout";
+}
+
+
+<div>
+   
+    
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cargo</th>
+                <th>Salario Mensual</th>
+                <th>Descuento AFP</th>
+                <th>Descuento ARS</th>
+                <th>Descuento ISR</th>
+                <th>Total de descuentos</th>
+                <th>Salario Neto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Empleado empleado in Model.empleados)
+            {
+                double ars = empleado.salario * 0.0304;
+                ars = ((ars >= 4098.53) ? 4098.53 : ars);
+                double afp = empleado.salario * 0.0287;
+                afp = ((afp >= 7738.67) ? 7738.67 : afp);
+                double Irs = Math.Round( (empleado.salario*12 >= 867123.01) ? ((empleado.salario *12 - 867123.01) * 0.25 + 79776.00)/12 :
+                             (empleado.salario*12 >= 624329.01) ? ((empleado.salario *12 - 624329.01) * 0.20 + 31216.00)/12 :
+                             (empleado.salario*12 >= 416220.01) ? ((empleado.salario*12 - 416220.01) * 0.15)/12 : 0 ,2);
+            <tr>
+                <td>@empleado.nombre</td>
+                <td>@empleado.apellido</td>
+                <td>@empleado.cargo</td>
+                <td>@empleado.salario</td>
+                <td>@afp</td>
+                <td>@ars</td>
+                <td>@Irs</td>
+                <td>@(afp+ars+Irs)</td>
+                <td>@(empleado.salario-(afp + ars + Irs))</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
