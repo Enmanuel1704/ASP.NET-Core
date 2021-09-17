@@ -13,7 +13,7 @@ namespace Practica_4
                 Console.WriteLine(item);
             }
         }
-        public bool EsImpar(int x)
+        public bool EsImpar(int x) // x => x%2 != 0
         {
             if (x % 2 != 0)
             {
@@ -26,14 +26,14 @@ namespace Practica_4
         }
 
 
-        public double CalcularITBIS(double precio)
+        public double CalcularITBIS(double precio) // p => p* 0.18
         {
             var itebis = precio * 0.18;
             return itebis;
         }
 
 
-        public DateTime GetDate()
+        public DateTime GetDate() // () => DateTime.Now
         {
             var fecha = DateTime.Now;
             return fecha;
