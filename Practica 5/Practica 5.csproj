@@ -6,4 +6,8 @@
     <RootNamespace>Practica_5</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Practica 4\Practica 4.csproj" />
+  </ItemGroup>
+
 </Project>

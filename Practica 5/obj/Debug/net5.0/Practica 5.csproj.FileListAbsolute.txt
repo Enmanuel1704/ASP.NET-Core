@@ -1,0 +1,16 @@
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.exe
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.deps.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.runtimeconfig.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.runtimeconfig.dev.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\ref\Practica 5.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\bin\Debug\net5.0\Practica 5.pdb
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.csproj.AssemblyReference.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.AssemblyInfoInputs.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.AssemblyInfo.cs
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.csproj.CoreCompileInputs.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\ref\Practica 5.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.pdb
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 5\obj\Debug\net5.0\Practica 5.genruntimeconfig.cache

@@ -12,6 +12,20 @@ namespace Practica_4
             {
                 Console.WriteLine(item);
             }
+
+            Func<int, bool> EsImpar = x => x % 2 != 0;
+            Func<double, double> CacularITBIS = p => p * 0.18;
+            Func<DateTime> GetDate = () => DateTime.Now;
+            Console.WriteLine();
+            Console.Write("Es impar? ");
+            Console.WriteLine(EsImpar.Invoke(3));
+            Console.WriteLine();
+            Console.Write("El ITBIS es: ");
+            Console.WriteLine(CacularITBIS.Invoke(99.99));
+            Console.WriteLine();
+            Console.Write("La Fecha es: ");
+            Console.WriteLine(GetDate().ToString());
+
         }
         public bool EsImpar(int x) // x => x%2 != 0
         {

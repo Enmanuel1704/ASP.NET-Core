@@ -46,20 +46,42 @@ namespace Practica_5
             };
 
 
+            Console.WriteLine();
+            Console.WriteLine("1- Productos por una categoría en especifico (Equipo Tecnológicos)");
             var productosTec = from p in productos
                                where p.CategoriaID == 5
                                select p;
+            productosTec.Print(p => p.Select(x => x.ID.ToString()+"\t"+x.Nombre+"\t"+x.Marca + "\t" + x.Modelo + "\t" + x.Precio));
 
+            Console.WriteLine();
+            Console.WriteLine("2 - Los productos con precios mayores de 3,000 pesos pero menores de 5000 pesos, ordenados descendente mente");
             var productos3000a5000 = from p in productos
                                      where p.Precio >= 3000 && p.Precio <= 5000
                                      orderby p.ID descending
                                      select p;
+            productos3000a5000.Print(p => p.Select(p => p.ID.ToString() + "\t" + p.Nombre + "\t" + p.Marca + "\t" + p.Modelo + "\t" + p.Precio));
 
+
+            Console.WriteLine();
+            Console.WriteLine("3 - Los nombres de las categorías de los productos registrados (usar join)");
             var prodycategoria = from p in productos
                                  join c in categorias on p.CategoriaID equals c.ID
-                                 select  c.Nombre ;
+                                 select c.Nombre;
 
 
+            prodycategoria.Print(p => p);
+
+        }
+    }
+    public static class help
+    {
+        public static void Print<T>(this IEnumerable<T> enumerable, Func<IEnumerable<T>, IEnumerable<string>> func)
+        {
+            foreach (var item in func(enumerable))
+            {
+                Console.WriteLine(item);
+            }
+           
         }
     }
 }

@@ -14,3 +14,19 @@ C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\ref\Practica 4.dll
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.pdb
 C:\Users\jsantos\Downloads\Cursos\.net CORE\Primera app Razor\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.genruntimeconfig.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.exe
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.deps.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.runtimeconfig.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.runtimeconfig.dev.json
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\ref\Practica 4.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\bin\Debug\net5.0\Practica 4.pdb
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.csproj.AssemblyReference.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.AssemblyInfoInputs.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.AssemblyInfo.cs
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.csproj.CoreCompileInputs.cache
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\ref\Practica 4.dll
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.pdb
+C:\Users\MIDEREC\Desktop\Practica1-ASP.NET-Core\Practica 4\obj\Debug\net5.0\Practica 4.genruntimeconfig.cache

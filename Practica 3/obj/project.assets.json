@@ -257,6 +257,29 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Practica 4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Practica 4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Practica 4.dll": {}
+        }
+      },
+      "Practica 5/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Practica 4": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Practica 5.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Practica 5.dll": {}
+        }
       }
     }
   },
@@ -728,36 +751,43 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Practica 4/1.0.0": {
+      "type": "project",
+      "path": "../Practica 4/Practica 4.csproj",
+      "msbuildProject": "../Practica 4/Practica 4.csproj"
+    },
+    "Practica 5/1.0.0": {
+      "type": "project",
+      "path": "../Practica 5/Practica 5.csproj",
+      "msbuildProject": "../Practica 5/Practica 5.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.9"
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.9",
+      "Practica 5 >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jsantos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\MIDEREC\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
+      "projectUniqueName": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
       "projectName": "Practica 3",
-      "projectPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
-      "packagesPath": "C:\\Users\\jsantos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 3\\obj\\",
+      "projectPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\Practica 3.csproj",
+      "packagesPath": "C:\\Users\\MIDEREC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\MIDEREC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -769,7 +799,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 5\\Practica 5.csproj": {
+              "projectPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 5\\Practica 5.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

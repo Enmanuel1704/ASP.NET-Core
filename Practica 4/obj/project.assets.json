@@ -8,28 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jsantos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\MIDEREC\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 4\\Practica 4.csproj",
+      "projectUniqueName": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 4\\Practica 4.csproj",
       "projectName": "Practica 4",
-      "projectPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 4\\Practica 4.csproj",
-      "packagesPath": "C:\\Users\\jsantos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jsantos\\Downloads\\Cursos\\.net CORE\\Primera app Razor\\Practica1-ASP.NET-Core\\Practica 4\\obj\\",
+      "projectPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 4\\Practica 4.csproj",
+      "packagesPath": "C:\\Users\\MIDEREC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MIDEREC\\Desktop\\Practica1-ASP.NET-Core\\Practica 4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\MIDEREC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
